@@ -1,0 +1,730 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Allerta+Stencil&family=Chathura:wght@100;300;400;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Allerta+Stencil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*================================BASE STYLING==========================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    color: white;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(images/headerimage.jpg);
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+     z-index: -2;
+     background-attachment: fixed;
+     
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Allerta Stencil", sans-serif ;
+}
+.sub-heading{
+    font-family: "Aleo", serif;
+}
+button{
+    background-color: #d05d2c;
+}
+button:hover{
+    background: transparent;;
+}
+button a{
+    color: white;
+}
+/*=========================================================================*/
+.navdiv{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 30px;
+    width: 100%;
+}
+.navbar .logodiv{
+    
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    width: 30%;
+    display: flex;
+}
+.navbar div .logo{
+   width: 60px;
+    margin: 0 auto;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0 30px;
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+   font-weight: 600;
+   font-size: 12px;
+}
+.navbar ul li a:hover{
+    color: #b43d0b;
+    transition: 0.3s ease-in-out;
+}
+.hero-section{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+.hero1{
+    width:50% ;
+    height:100% ;
+    position: absolute;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.hero-text{
+    width: 70%;
+}
+.hero-text .sub-heading{
+    font-weight: 100;
+    font-size: 12px;
+}
+.hero-text h1{
+   font-size: 45px;
+    
+}
+.heading{
+    line-height: 24px;
+    width: 50%;
+    margin: 0 auto;
+}
+.hero-text .text{
+font-size: 10px;
+text-align: center;
+margin-top: 10px;
+font-weight: lighter;
+margin-top: 15px;
+font-weight: 200;
+}
+.hero-text button{
+   margin-left: 35%;
+   margin-top: 3%;
+   padding: 5px 10px;
+   border-radius: 25px;
+   border: none;
+}
+.hero-text button:hover{
+   border: 2px solid #b43d0b;
+}
+.hero-text button a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.hero-image{
+    width: 50%;
+    float: right;
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    position: relative;
+    border-radius: 30px;
+    margin-right: 10px;
+    
+}
+.hero-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.hero-image button{
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    padding: 5px 8px;
+    border-radius: 25px;
+    border: none;
+}
+.hero-image button:hover{
+    border: 2px solid #b43d0b;
+}
+.hero-image button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 10px;
+}
+.features{
+    width: 100%;
+    height: 40vh;
+    margin-top: 10px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 30px;
+}
+.features-image{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.features-image img{
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 20px;
+    border-radius: 30px; 
+    
+}
+.features-image .overlay{
+    position: absolute;
+    width: 90%;
+    background-color: rgba(0,0,0,0.5);
+    height: 80%;
+    margin: 0 20px;
+    border-radius: 30px;
+}
+.features-text{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    right: 0;
+    top: 7%;
+}
+.features-text h4{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.inner-features {
+    display: grid;
+    grid-template-columns:  1fr 1fr ;
+    grid-template-rows: 100px 100px ;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.nutrition{
+    grid-column: 1/2;
+    grid-row: 1/2;  
+}
+.nutrition p{
+    width: 60%;
+}
+.health{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.health p{
+    width: 60%;
+}
+.ai{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.ai p{
+    width: 60%;
+}
+.workout{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.workout p{
+    width: 70%;
+}
+.inner-features div .sub-heading{
+    font-size: 14px;
+    font-weight: 500;
+}
+.inner-features div img{
+    background-color: #fa733a;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.programs h4{
+    text-align: center;
+    font-size: 40px;
+}
+.card-wrapper{
+    margin: 20px;
+}
+.card-list .card-item{
+    list-style-type: none;   
+}
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background-color: rgba(43, 42, 42,0.6);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    height: 40vh;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+   aspect-ratio: 12/9;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 15px;
+}
+
+.card-link .badge{
+font-size: 18px;
+font-weight: 500;
+color: #b13906;
+text-shadow: 
+1px -1px 2px rgba(255, 255, 255, 0.4);
+}
+.card-link .card-image:hover{
+    border: 1px solid #d05d2c;
+    width: 99%;
+}
+.card-link .card-title{
+    font-size: 9px;
+    color: white;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}
+.card-link .card-button{
+    padding: 5px 20px;
+    width: 50%;    
+    border: 2px solid #d05d2c;
+    border-radius: 30px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px; 
+}
+.card-link .card-button span{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: #d05d2c;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+}
+.card-link .card-button:hover span{
+    width: 100%;
+}
+.swiper-button-next:hover{
+    color: #b13906;
+}
+.swiper-button-prev:hover{
+    color: #b13906;
+}
+.pricing{
+    margin-bottom: 30px;
+}
+.pricing h2{
+    text-align: center;
+    font-size: 40px;
+}
+.pricing-card{
+    width: 90%;
+    display: flex;
+    margin: 20px auto;
+    gap: 20px;
+}
+.pricing-card div{
+    width: 100%;
+    height: 50vh;
+    padding: 10px 20px;
+    background-color: rgb(187, 185, 185);
+    color: black;
+    border-radius: 10px;
+    position: relative;
+    max-width: 250px ;
+    margin: 0 auto;
+}
+.pricing-card div:hover{
+    background-color: #b43d0b;
+    color: white;
+}
+.pricing-card div:hover button {
+   background-color: white; 
+}
+.pricing-card div:hover button a{
+    color: black;
+    font-weight: 600;
+}
+.pricing-card div .sub-heading{
+    font-size: 8px;
+    text-align: center;
+    font-weight: 300;
+    color: grey;
+}
+.pricing-card div h5{
+    text-align: center;
+    margin: 0 0 5px ;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+}
+.pricing-card div .feature {
+position: absolute;
+width: 100%;
+left: 0;
+height: 70%;
+background-color: transparent;
+}
+.pricing-card div .feature p {
+padding: 7px 0;
+font-size: 10px;
+}
+
+.pricing-card div button {
+position: absolute;
+bottom: 3%;
+margin: 0 auto;
+padding: 6px 10px;
+border: none;
+border-radius: 8px;
+background-color: #b13906;
+}
+.pricing-card div button a {
+text-decoration: none;
+font-weight: 500;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    max-width:100px ;
+    right: 0;
+   
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.contact{
+    max-width: 500px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.contact h2{
+    margin: 10px 0;
+    font-weight: 900;
+}
+
+.contact input, .contact textarea{
+    width: 50%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px ;
+    background-color: white;
+    outline: none;
+}
+.contact input{
+    width: fit-content;
+}
+.contact input::placeholder, .contact textarea::placeholder{
+    color: black;
+    font-size: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.contact-form button{
+    color: white;
+    border: 2px solid black;
+    padding: 2px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.contact-form button:hover{
+    border: 2px solid #d05d2c;
+}
+.contact-form p{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.footer{
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.footer div h5{
+    color: black;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+.footer div h5 span{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #b13906;
+    transition: 0.3s ease-in-out;
+}
+.footer div h5:hover span{
+    width: 100%;
+}
+.footer div p a{
+    text-decoration: none;
+    font-size: 10px;
+    color: black;
+    font-weight: 600;
+}
+.footer div p a:hover{
+    color: #d4480c;
+}
+.footer div p a i{
+    padding: 0 5px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============================MEDIA QUERIES========================*/
+@media (min-width:630px){
+    .nav__toggle{
+        display: none;
+    }
+    .nav__close{
+        display: none;
+    }
+}
+@media (max-width:2560px){
+    .card-list .card-item .card-link{
+        height: 50vh;
+    }
+}
+@media (max-width:894px){
+    .navbar ul li{
+        margin: 0 20px;
+    }
+    .inner-features div .sub-heading{
+       font-size: 12px;
+    }
+}
+@media (max-width:775px){
+    .inner-features div .sub-heading{
+        font-size: 10px;
+     }
+}
+@media(max-width: 735px){
+    .navbar ul li{
+        margin: 0 15px;
+    }
+}
+@media (max-width:672px){
+    .navbar ul li{
+        margin: 10px;
+    }
+}
+@media(max-width:656px){
+    .inner-features div .sub-heading{
+        font-size: 8px;
+    }
+}
+@media (max-width:611px){
+    .navbar ul li{
+        margin: 5px;
+    }
+}
+@media(max-width:630px){
+    .card-list .card-item .card-link{
+        height: 60vh;
+    }
+   
+    .navbar ul li{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 20px;
+        row-gap: 2.5rem; 
+        margin-top: 70px; 
+    }
+    .nav-menu{
+        position: fixed;
+        background-color: rgba(37, 37, 37, .8);
+        border-left: 2px solid #f1f1f1;
+        backdrop-filter: blur(32px);
+        -webkit-backdrop-filter: blur(32px);
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100%;
+        transition: right .3s;
+        box-shadow: 2px 2px 10px grey;
+        z-index: 100;
+        padding: 20px;
+    }
+    .show-menu{
+        right: 0;
+    }
+    .nav__close{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .nav__close:hover{
+        color: #e05514;
+        cursor: pointer;
+    }
+     .nav__toggle{
+      position: absolute;
+      top: 4%;
+      right: 10%;
+      font-size: 30px;
+    }
+    .nav__toggle:hover{
+        color:  #e05514;
+        cursor: pointer;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 200px;
+    }
+    .hero-image{
+        position: absolute;
+        height: 100%;
+        left: 0;
+        width: 100%;
+    }
+    .hero-image button{
+        left: 40%;
+    }
+    .hero1{
+        width:100% ;
+        height: 20vh;
+        top: 100%;   
+    }
+    .hero-text{
+        position: absolute;
+        width: 100%;
+    }
+    .hero-text button{
+        position: relative;
+        margin-left: 40%;
+    }
+    .features{
+       margin-bottom: 70%;
+       width:100% ;
+    }
+    .features-image{
+        width: 90%;
+        position: relative;
+       
+    }
+    .features-image img{
+        width: 100%;
+    }
+    .features-image  .overlay{
+        width: 100%;
+    }
+    .features-text{
+        width: 100%;
+        position: relative;
+    }
+    .features-text h4{
+        text-align: center;
+    }
+    .inner-features{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .card-list .card-item .card-link{
+        height: 70vh;
+    }
+    
+}
+@media (max-width:392px){
+    .features{
+        margin-bottom: 80%;
+    }
+}
+@media (max-width:352px){
+    .features{
+        margin-bottom: 90%;
+    }
+}
+@media (max-width:320px){
+    .features{
+        margin-bottom: 100%;
+    }
+}
+@media (max-width:510px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        width: 100%;   
+        
+    }
+    .footer .quick-links{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .footer .contact{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0;
+    }
+    .footer .socials{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .footer .more{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .pricing-card div .feature p{
+        font-size: 6px;
+    }
+    .pricing-card div button{
+        left: 10%;
+        width: 70%;
+        padding: 0;
+        align-items: center;
+        margin: 0;
+    }
+    .pricing-card div button a{
+        font-size: 7px;
+        text-align: center;
+    }
+    .pricing-card{
+        width: 100%;
+        gap: 5px;
+    }
+    .pricing-card .basic-price button{
+       width: 70%;
+       left: 15%;
+    }
+}
